@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101DE58446268480C0AA04F9 /* Pods_VoipTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BED6749102B4D1EAE360F0 /* Pods_VoipTest.framework */; };
+		58013A5F255A8B9D009DB85A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013A5E255A8B9D009DB85A /* AppDelegate.m */; };
+		58013A62255A8B9D009DB85A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013A61255A8B9D009DB85A /* SceneDelegate.m */; };
+		58013A65255A8B9D009DB85A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013A64255A8B9D009DB85A /* ViewController.m */; };
+		58013A68255A8B9D009DB85A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58013A66255A8B9D009DB85A /* Main.storyboard */; };
+		58013A6A255A8BA0009DB85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58013A69255A8BA0009DB85A /* Assets.xcassets */; };
+		58013A6D255A8BA0009DB85A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58013A6B255A8BA0009DB85A /* LaunchScreen.storyboard */; };
+		58013A70255A8BA0009DB85A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013A6F255A8BA0009DB85A /* main.m */; };
+		58013A92255B6CF2009DB85A /* LinphoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013A91255B6CF2009DB85A /* LinphoneManager.m */; };
+		58013A96255BB2D9009DB85A /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013A95255BB2D9009DB85A /* CallManager.swift */; };
+		58013A99255BBA50009DB85A /* CoreManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013A98255BBA50009DB85A /* CoreManagerDelegate.swift */; };
+		58013A9D255BBE67009DB85A /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013A9C255BBE67009DB85A /* ProviderDelegate.swift */; };
+		58013AA2255BC211009DB85A /* AudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013AA1255BC211009DB85A /* AudioHelper.m */; };
+		58013AA5255BC2CF009DB85A /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013AA4255BC2CF009DB85A /* ConfigManager.swift */; };
+		58013AA8255BC333009DB85A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013AA7255BC333009DB85A /* AppManager.swift */; };
+		58013AB4255BC589009DB85A /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58013AB3255BC589009DB85A /* CoreManager.swift */; };
+		583A90692564C90B00AE79C3 /* LoginInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 583A90682564C90B00AE79C3 /* LoginInVC.m */; };
+		585B4EEA256228C600DE4E02 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585B4EE9256228C600DE4E02 /* ExternalAccessory.framework */; };
+		58A466E92564B8B900C93B82 /* linphonerc in Resources */ = {isa = PBXBuildFile; fileRef = 58A466E82564B8B900C93B82 /* linphonerc */; };
+		58A466EC2564B99800C93B82 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = 58A466EB2564B99700C93B82 /* linphonerc-factory */; };
+		58AB30FA25625FFF008E5722 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AB30F925625FFF008E5722 /* VideoToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58013A5A255A8B9D009DB85A /* VoipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58013A5D255A8B9D009DB85A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58013A5E255A8B9D009DB85A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58013A60255A8B9D009DB85A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		58013A61255A8B9D009DB85A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		58013A63255A8B9D009DB85A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		58013A64255A8B9D009DB85A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		58013A67255A8B9D009DB85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58013A69255A8BA0009DB85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58013A6C255A8BA0009DB85A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58013A6E255A8BA0009DB85A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58013A6F255A8BA0009DB85A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58013A90255B6CF2009DB85A /* LinphoneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinphoneManager.h; sourceTree = "<group>"; };
+		58013A91255B6CF2009DB85A /* LinphoneManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinphoneManager.m; sourceTree = "<group>"; };
+		58013A94255BB2D9009DB85A /* VoipTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoipTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		58013A95255BB2D9009DB85A /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		58013A98255BBA50009DB85A /* CoreManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManagerDelegate.swift; sourceTree = "<group>"; };
+		58013A9C255BBE67009DB85A /* ProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		58013AA0255BC211009DB85A /* AudioHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioHelper.h; sourceTree = "<group>"; };
+		58013AA1255BC211009DB85A /* AudioHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioHelper.m; sourceTree = "<group>"; };
+		58013AA4255BC2CF009DB85A /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		58013AA7255BC333009DB85A /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		58013AB3255BC589009DB85A /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		583A90672564C90B00AE79C3 /* LoginInVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInVC.h; sourceTree = "<group>"; };
+		583A90682564C90B00AE79C3 /* LoginInVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInVC.m; sourceTree = "<group>"; };
+		585B4EE72562281B00DE4E02 /* VoipTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoipTest.entitlements; sourceTree = "<group>"; };
+		585B4EE9256228C600DE4E02 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		58A466E82564B8B900C93B82 /* linphonerc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linphonerc; sourceTree = "<group>"; };
+		58A466EB2564B99700C93B82 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
+		58AB30F925625FFF008E5722 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6C396C4F2A6D9CF0B70BFF05 /* Pods-VoipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTest.release.xcconfig"; path = "Target Support Files/Pods-VoipTest/Pods-VoipTest.release.xcconfig"; sourceTree = "<group>"; };
+		A34913A94740AB0895175292 /* Pods-VoipTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoipTest.debug.xcconfig"; path = "Target Support Files/Pods-VoipTest/Pods-VoipTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F4BED6749102B4D1EAE360F0 /* Pods_VoipTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoipTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58013A57255A8B9D009DB85A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AB30FA25625FFF008E5722 /* VideoToolbox.framework in Frameworks */,
+				585B4EEA256228C600DE4E02 /* ExternalAccessory.framework in Frameworks */,
+				101DE58446268480C0AA04F9 /* Pods_VoipTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044016A3617E596DBD9611F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A34913A94740AB0895175292 /* Pods-VoipTest.debug.xcconfig */,
+				6C396C4F2A6D9CF0B70BFF05 /* Pods-VoipTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58013A51255A8B9D009DB85A = {
+			isa = PBXGroup;
+			children = (
+				58013A5C255A8B9D009DB85A /* VoipTest */,
+				58013A5B255A8B9D009DB85A /* Products */,
+				044016A3617E596DBD9611F2 /* Pods */,
+				8578875B92D7293911A0C4BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58013A5B255A8B9D009DB85A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58013A5A255A8B9D009DB85A /* VoipTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58013A5C255A8B9D009DB85A /* VoipTest */ = {
+			isa = PBXGroup;
+			children = (
+				583A90662564C8DF00AE79C3 /* Login */,
+				585B4EE72562281B00DE4E02 /* VoipTest.entitlements */,
+				58013A9F255BBF79009DB85A /* Core */,
+				58013A5D255A8B9D009DB85A /* AppDelegate.h */,
+				58013A5E255A8B9D009DB85A /* AppDelegate.m */,
+				58A466EB2564B99700C93B82 /* linphonerc-factory */,
+				58A466E82564B8B900C93B82 /* linphonerc */,
+				58013A60255A8B9D009DB85A /* SceneDelegate.h */,
+				58013A61255A8B9D009DB85A /* SceneDelegate.m */,
+				58013A63255A8B9D009DB85A /* ViewController.h */,
+				58013A64255A8B9D009DB85A /* ViewController.m */,
+				58013A66255A8B9D009DB85A /* Main.storyboard */,
+				58013A69255A8BA0009DB85A /* Assets.xcassets */,
+				58013A6B255A8BA0009DB85A /* LaunchScreen.storyboard */,
+				58013A6E255A8BA0009DB85A /* Info.plist */,
+				58013A6F255A8BA0009DB85A /* main.m */,
+				58013A94255BB2D9009DB85A /* VoipTest-Bridging-Header.h */,
+			);
+			path = VoipTest;
+			sourceTree = "<group>";
+		};
+		58013A9F255BBF79009DB85A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58013A90255B6CF2009DB85A /* LinphoneManager.h */,
+				58013A91255B6CF2009DB85A /* LinphoneManager.m */,
+				58013A95255BB2D9009DB85A /* CallManager.swift */,
+				58013A98255BBA50009DB85A /* CoreManagerDelegate.swift */,
+				58013A9C255BBE67009DB85A /* ProviderDelegate.swift */,
+				58013AA0255BC211009DB85A /* AudioHelper.h */,
+				58013AA1255BC211009DB85A /* AudioHelper.m */,
+				58013AA4255BC2CF009DB85A /* ConfigManager.swift */,
+				58013AA7255BC333009DB85A /* AppManager.swift */,
+				58013AB3255BC589009DB85A /* CoreManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		583A90662564C8DF00AE79C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				583A90672564C90B00AE79C3 /* LoginInVC.h */,
+				583A90682564C90B00AE79C3 /* LoginInVC.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8578875B92D7293911A0C4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58AB30F925625FFF008E5722 /* VideoToolbox.framework */,
+				585B4EE9256228C600DE4E02 /* ExternalAccessory.framework */,
+				F4BED6749102B4D1EAE360F0 /* Pods_VoipTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58013A59255A8B9D009DB85A /* VoipTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58013A73255A8BA0009DB85A /* Build configuration list for PBXNativeTarget "VoipTest" */;
+			buildPhases = (
+				D13D3E7CBA8F1172D47A50BD /* [CP] Check Pods Manifest.lock */,
+				58013A56255A8B9D009DB85A /* Sources */,
+				58013A57255A8B9D009DB85A /* Frameworks */,
+				58013A58255A8B9D009DB85A /* Resources */,
+				E95DE9A6EB58CBFB82C9BA8F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoipTest;
+			productName = VoipTest;
+			productReference = 58013A5A255A8B9D009DB85A /* VoipTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58013A52255A8B9D009DB85A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					58013A59255A8B9D009DB85A = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+				};
+			};
+			buildConfigurationList = 58013A55255A8B9D009DB85A /* Build configuration list for PBXProject "VoipTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58013A51255A8B9D009DB85A;
+			productRefGroup = 58013A5B255A8B9D009DB85A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58013A59255A8B9D009DB85A /* VoipTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58013A58255A8B9D009DB85A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A466E92564B8B900C93B82 /* linphonerc in Resources */,
+				58013A6D255A8BA0009DB85A /* LaunchScreen.storyboard in Resources */,
+				58013A6A255A8BA0009DB85A /* Assets.xcassets in Resources */,
+				58A466EC2564B99800C93B82 /* linphonerc-factory in Resources */,
+				58013A68255A8B9D009DB85A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D13D3E7CBA8F1172D47A50BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoipTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95DE9A6EB58CBFB82C9BA8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoipTest/Pods-VoipTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoipTest/Pods-VoipTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoipTest/Pods-VoipTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58013A56255A8B9D009DB85A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58013A65255A8B9D009DB85A /* ViewController.m in Sources */,
+				58013A92255B6CF2009DB85A /* LinphoneManager.m in Sources */,
+				58013AA2255BC211009DB85A /* AudioHelper.m in Sources */,
+				58013AB4255BC589009DB85A /* CoreManager.swift in Sources */,
+				583A90692564C90B00AE79C3 /* LoginInVC.m in Sources */,
+				58013AA5255BC2CF009DB85A /* ConfigManager.swift in Sources */,
+				58013A5F255A8B9D009DB85A /* AppDelegate.m in Sources */,
+				58013A96255BB2D9009DB85A /* CallManager.swift in Sources */,
+				58013A70255A8BA0009DB85A /* main.m in Sources */,
+				58013AA8255BC333009DB85A /* AppManager.swift in Sources */,
+				58013A99255BBA50009DB85A /* CoreManagerDelegate.swift in Sources */,
+				58013A62255A8B9D009DB85A /* SceneDelegate.m in Sources */,
+				58013A9D255BBE67009DB85A /* ProviderDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58013A66255A8B9D009DB85A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58013A67255A8B9D009DB85A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58013A6B255A8BA0009DB85A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58013A6C255A8BA0009DB85A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58013A71255A8BA0009DB85A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58013A72255A8BA0009DB85A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58013A74255A8BA0009DB85A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34913A94740AB0895175292 /* Pods-VoipTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoipTest/VoipTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2433VQRT3;
+				INFOPLIST_FILE = VoipTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linPhone.VoipTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoipTest/VoipTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		58013A75255A8BA0009DB85A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C396C4F2A6D9CF0B70BFF05 /* Pods-VoipTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoipTest/VoipTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2433VQRT3;
+				INFOPLIST_FILE = VoipTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linPhone.VoipTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoipTest/VoipTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58013A55255A8B9D009DB85A /* Build configuration list for PBXProject "VoipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58013A71255A8BA0009DB85A /* Debug */,
+				58013A72255A8BA0009DB85A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58013A73255A8BA0009DB85A /* Build configuration list for PBXNativeTarget "VoipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58013A74255A8BA0009DB85A /* Debug */,
+				58013A75255A8BA0009DB85A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58013A52255A8B9D009DB85A /* Project object */;
+}
